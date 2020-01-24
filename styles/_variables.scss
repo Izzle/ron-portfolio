@@ -26,6 +26,10 @@ $purple: #732658;
 $black: #222;
 $white: white;
 
+// Widths
+// NOTE: You can use math with these! i.e. use $imgWidth / 2; 
+$projectImgWidth: 400px; // For the project images on the portfolio view
+
 @mixin flex($direction, $justify) {
     display: flex;
     flex-direction: $direction;

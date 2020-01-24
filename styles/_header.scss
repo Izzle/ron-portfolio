@@ -38,11 +38,3 @@ nav {
 #logo-background {
     background-color: $black;
 }
-
-a:hover .text {
-    visibility:hidden;  /* Comment this property out to see the ICON overlay the text */
-}
-a:hover .icons {
-    visibility:visible;
-    color:#fff;
-}

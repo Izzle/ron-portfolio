@@ -53,16 +53,6 @@ header, nav {
   background-color: #222;
 }
 
-a:hover .text {
-  visibility: hidden;
-  /* Comment this property out to see the ICON overlay the text */
-}
-
-a:hover .icons {
-  visibility: visible;
-  color: #fff;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -87,5 +77,45 @@ a:hover {
 
 .hidden {
   display: none;
+}
+
+/* This holds our H1 and H2 on the main page*/
+.text-zone {
+  padding-left: 4rem;
+}
+
+/* Code for the portfolio/projects page/view */
+img {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* This is to center our project images which are img wrapped in anchor tags */
+}
+
+.project-container a {
+  margin: 0 auto;
+}
+
+.project-container button {
+  height: 2rem;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
