@@ -7,7 +7,10 @@
 
     Projects-Desktop(Live Page):<i class="fas fa-desktop"></i>
     Projects-Code-Branch(Github link): <i class="fas fa-code-branch"></i>
-    OR GITHUB: <i class="fab fa-github"></i>
+    
+    GITHUB: <i class="fab fa-github"></i>
+    LinkedIn: <i class="fab fa-linkedin"></i>
+    Email: <i class="fas fa-at"></i>
 
 */
 header, nav {
@@ -53,40 +56,9 @@ header, nav {
   background-color: #222;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-color: #222;
-  color: white;
-}
-
-h1 {
-  font-family: "Libre Baskerville", serif;
-}
-
-h2 {
-  font-family: "Open Sans", sans-serif;
-}
-
-a:hover {
-  color: #05F2F2;
-}
-
-.hidden {
-  display: none;
-}
-
-/* This holds our H1 and H2 on the main page*/
-.text-zone {
-  padding-left: 4rem;
-}
-
 /* Code for the portfolio/projects page/view */
 img {
-  width: 400px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -114,8 +86,85 @@ img {
 
 .project-container button {
   height: 2rem;
-  width: 200px;
+  width: 160px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-links a {
+  color: white;
+}
+
+.contact-links a i {
+  font-size: 5rem;
+}
+
+.about-container {
+  width: 600px;
+}
+
+.about-container img {
+  border-radius: 50%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: white;
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h2 {
+  color: #732658;
+}
+
+h2, a, p, button {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+a:hover {
+  color: #05F2F2;
+}
+
+.hidden {
+  display: none;
+}
+
+/* This holds our H1 and H2 on the main page*/
+.text-zone {
+  padding-left: 4rem;
+}
+
+.main-contact-button {
+  border: 2px solid #05F2F2;
+  color: #05F2F2;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.main-contact-button:hover {
+  color: #222;
+  background-color: #05F2F2;
 }
 /*# sourceMappingURL=styles.css.map */

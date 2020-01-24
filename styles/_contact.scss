@@ -1,0 +1,11 @@
+.contact-links {
+    @include flex(row, center);
+
+    a {
+        color: $white;
+
+        i {
+            font-size: 5rem;
+        }
+    }
+}

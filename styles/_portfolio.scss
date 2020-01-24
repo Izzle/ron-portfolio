@@ -1,0 +1,24 @@
+/* Code for the portfolio/projects page/view */
+
+img {
+    width: $projectImgWidth;
+    margin: 0 auto;
+}
+
+.project-container {
+    @include flex(column, center);
+    margin-bottom: 30px;
+    align-items: center;
+
+    /* This is to center our project images which are img wrapped in anchor tags */
+    a {
+        margin: 0 auto;
+    }
+    
+    button {
+        height: 2rem;
+        width: $projectImgWidth / 2;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}

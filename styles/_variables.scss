@@ -8,7 +8,10 @@
 
     Projects-Desktop(Live Page):<i class="fas fa-desktop"></i>
     Projects-Code-Branch(Github link): <i class="fas fa-code-branch"></i>
-    OR GITHUB: <i class="fab fa-github"></i>
+    
+    GITHUB: <i class="fab fa-github"></i>
+    LinkedIn: <i class="fab fa-linkedin"></i>
+    Email: <i class="fas fa-at"></i>
 
 */
 
@@ -28,7 +31,7 @@ $white: white;
 
 // Widths
 // NOTE: You can use math with these! i.e. use $imgWidth / 2; 
-$projectImgWidth: 400px; // For the project images on the portfolio view
+$projectImgWidth: 320px; // For the project images on the portfolio view
 
 @mixin flex($direction, $justify) {
     display: flex;

@@ -1,5 +1,8 @@
 @import './variables';
 @import './header';
+@import './portfolio';
+@import './contact';
+@import './about';
 
 *{
     box-sizing: border-box;
@@ -15,7 +18,12 @@ h1 {
 }
 
 h2 {
+    color: $purple;
+}
+
+h2, a, p, button {
     font-family: $fontBody;
+    color: $white;
 }
 
 a:hover {
@@ -31,31 +39,15 @@ a:hover {
     padding-left: 4rem;
 }
 
-/* Code for the portfolio/projects page/view */
+.main-contact-button {
+    border: 2px solid $teal;
+    color: $teal;
+    text-decoration: none;
+    padding: 10px;
 
-img {
-    width: $projectImgWidth;
-    margin: 0 auto;
-}
 
-.project-container {
-    @include flex(column, center);
-    margin-bottom: 30px;
-    align-items: center;
-
-    /* This is to center our project images which are img wrapped in anchor tags */
-    a {
-        margin: 0 auto;
+    &:hover {
+        color: $black;
+        background-color: $teal;
     }
-    
-    button {
-        height: 2rem;
-        width: $projectImgWidth / 2;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-}
-
-.project-button-container {
-    
 }
