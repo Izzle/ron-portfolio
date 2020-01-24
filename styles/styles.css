@@ -1,3 +1,68 @@
+/*
+    Font Awesome Icons Used:
+    Hamburger: <i class="fas fa-bars"></i>
+    Home: <i class="fas fa-home"></i>
+    Person: <i class="far fa-user"></i>
+    Code: <i class="fas fa-code"></i>
+
+    Projects-Desktop(Live Page):<i class="fas fa-desktop"></i>
+    Projects-Code-Branch(Github link): <i class="fas fa-code-branch"></i>
+    OR GITHUB: <i class="fab fa-github"></i>
+
+*/
+header, nav {
+  /* @include is a way to reference a MIXIN (this one is on our variables.scss)
+    instead of typing display: flex, flex-direction: row; over and over again
+    We create a mixin (like a function) by using @mixin flex and reference that with @include flex.
+    We can also add parameters and sent arguments to them such as in this case below! */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #222;
+}
+
+#mobile-nav-hamburger, .nav-icons {
+  font-size: 2rem;
+  color: white;
+}
+
+#mobile-nav-hamburger:hover, .nav-icons:hover {
+  color: #05F2F2;
+}
+
+.nav-icons {
+  font-size: 1.3rem;
+}
+
+#logo-image {
+  width: 50px;
+}
+
+#logo-name {
+  color: white;
+}
+
+#logo-background {
+  background-color: #222;
+}
+
+a:hover .text {
+  visibility: hidden;
+  /* Comment this property out to see the ICON overlay the text */
+}
+
+a:hover .icons {
+  visibility: visible;
+  color: #fff;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -16,33 +81,11 @@ h2 {
   font-family: "Open Sans", sans-serif;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #732658;
+a:hover {
+  color: #05F2F2;
 }
 
-#logo-image {
-  width: 50px;
-}
-
-#logo-name {
-  color: white;
-}
-
-#logo-background {
-  background-color: #222;
-}
-
-#mobile-nav-hamburger {
-  font-size: 2rem;
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,18 @@
-// Our SCSS Variables
+// Our SCSS Variables and Mixins
+/*
+    Font Awesome Icons Used:
+    Hamburger: <i class="fas fa-bars"></i>
+    Home: <i class="fas fa-home"></i>
+    Person: <i class="far fa-user"></i>
+    Code: <i class="fas fa-code"></i>
+
+    Projects-Desktop(Live Page):<i class="fas fa-desktop"></i>
+    Projects-Code-Branch(Github link): <i class="fas fa-code-branch"></i>
+    OR GITHUB: <i class="fab fa-github"></i>
+
+*/
+
+
 // Fonts
 $fontBody: 'Open Sans', sans-serif;
 $fontTitle: 'Libre Baskerville', serif;
@@ -12,3 +26,8 @@ $purple: #732658;
 $black: #222;
 $white: white;
 
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}

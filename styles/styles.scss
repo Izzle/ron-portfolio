@@ -1,4 +1,5 @@
 @import './variables';
+@import './header';
 
 *{
     box-sizing: border-box;
@@ -17,24 +18,10 @@ h2 {
     font-family: $fontBody;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: $purple;
-}
-#logo-image {
-    width: 50px;
+a:hover {
+    color: $teal;
 }
 
-#logo-name {
-    color: $white;
-}
-
-#logo-background {
-    background-color: $black;
-}
-
-#mobile-nav-hamburger {
-    font-size: 2rem;
+.hidden {
+    display: none;
 }

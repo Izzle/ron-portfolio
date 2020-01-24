@@ -1,4 +1,3 @@
-'use strict';
 import portfolio from './portfolio.js';
 
 const main = function () {
