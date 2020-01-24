@@ -21,4 +21,9 @@ img {
         margin-top: 20px;
         margin-bottom: 10px;
     }
+
+    p {
+        width: $projectImgWidth;
+        line-height: 1.5;
+    }
 }

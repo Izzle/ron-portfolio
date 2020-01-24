@@ -91,6 +91,11 @@ img {
   margin-bottom: 10px;
 }
 
+.project-container p {
+  width: 320px;
+  line-height: 1.5;
+}
+
 .contact-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +147,7 @@ h2 {
 h2, a, p, button {
   font-family: "Open Sans", sans-serif;
   color: white;
+  line-height: 1.5;
 }
 
 footer {
