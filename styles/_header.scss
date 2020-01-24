@@ -1,0 +1,48 @@
+// SCSS for our Header and Nav
+
+header {
+    /* @include is a way to reference a MIXIN (this one is on our variables.scss)
+    instead of typing display: flex, flex-direction: row; over and over again
+    We create a mixin (like a function) by using @mixin flex and reference that with @include flex.
+    We can also add parameters and sent arguments to them such as in this case below! */
+    @include flex(row, space-between);
+    background-color: $black;
+}
+
+nav {
+    @extend header;
+}
+
+#mobile-nav-hamburger {
+    font-size: 2rem;
+    color: $white;
+    
+    &:hover {
+        color: $teal;
+    }
+}
+
+.nav-icons {
+    @extend #mobile-nav-hamburger;
+    font-size: 1.3rem;
+}
+
+#logo-image {
+    width: 50px;
+}
+
+#logo-name {
+    color: $white;
+}
+
+#logo-background {
+    background-color: $black;
+}
+
+a:hover .text {
+    visibility:hidden;  /* Comment this property out to see the ICON overlay the text */
+}
+a:hover .icons {
+    visibility:visible;
+    color:#fff;
+}
