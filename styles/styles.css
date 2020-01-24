@@ -1,0 +1,48 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: white;
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #732658;
+}
+
+#logo-image {
+  width: 50px;
+}
+
+#logo-name {
+  color: white;
+}
+
+#logo-background {
+  background-color: #222;
+}
+
+#mobile-nav-hamburger {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */
