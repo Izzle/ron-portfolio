@@ -136,11 +136,27 @@ h1 {
 
 h2 {
   color: #732658;
+  text-shadow: 1px 1px 1px #000;
 }
 
 h2, a, p, button {
   font-family: "Open Sans", sans-serif;
   color: white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2rem;
+  margin-top: 5rem;
 }
 
 a:hover {
@@ -161,6 +177,8 @@ a:hover {
   color: #05F2F2;
   text-decoration: none;
   padding: 10px;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .main-contact-button:hover {

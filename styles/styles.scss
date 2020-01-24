@@ -19,11 +19,18 @@ h1 {
 
 h2 {
     color: $purple;
+    text-shadow: 1px 1px 1px #000;
 }
 
 h2, a, p, button {
     font-family: $fontBody;
     color: $white;
+}
+
+footer {
+    @include flex(row, space-evenly);
+    font-size: 2rem;
+    margin-top: 5rem;
 }
 
 a:hover {
@@ -44,7 +51,8 @@ a:hover {
     color: $teal;
     text-decoration: none;
     padding: 10px;
-
+    display: inline-block;
+    margin-top: 1rem;
 
     &:hover {
         color: $black;
