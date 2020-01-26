@@ -83,3 +83,23 @@ a:hover {
         display: inline-block;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .project-container {
+        img{
+            width: $projectImgWidth * 2;
+        }
+        button {
+            width: $projectImgWidth;
+            height: 3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 5.5rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+            width: $projectImgWidth * 1.3;
+        }
+
+    }
+}

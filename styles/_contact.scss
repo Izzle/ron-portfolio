@@ -1,11 +1,35 @@
 .contact-links {
-    @include flex(row, center);
+    @include flex(column, center);
+
 
     a {
         color: $white;
+        margin: 40px;
+        text-align: center;
 
         i {
             font-size: 5rem;
         }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .contact-links {
+
+        a {
+            margin: 60px;
+        }
+
+        i {
+            font-size: 8rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-links {
+        @include flex(row, space-evenly);
+
+        margin-top: 200px;
     }
 }
