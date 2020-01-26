@@ -60,25 +60,25 @@ nav {
   background-color: #222;
 }
 
-@media screen and (min-width: 640px) {
-  #mobile-nav-hamburger::before, .nav-icons::before {
-    display: none;
-  }
-  .hidden {
-    display: inline;
-  }
-  .nav-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav-bar i {
+  display: inline;
+}
+
+.nav-bar span {
+  display: none;
 }
 
 /* Code for the portfolio/projects page/view */
@@ -315,6 +315,15 @@ a:hover {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-bar i {
+    display: none;
+  }
+  .nav-bar span {
+    display: inline;
   }
 }
 /*# sourceMappingURL=styles.css.map */

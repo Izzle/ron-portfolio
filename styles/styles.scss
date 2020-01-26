@@ -81,9 +81,20 @@ a:hover {
 
     .nav-bar {
         @include flex(row, space-evenly);
+
     }
 }
 
 @media screen and (min-width: 1200px) {
+    
+    .nav-bar{
+        i {
+            display: none;
+        }
+
+        span {
+            display: inline;
+        }
+    }
 
 }
