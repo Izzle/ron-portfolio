@@ -43,6 +43,10 @@ nav {
 .nav-bar {
     @include flex(row, space-evenly);
 
+    a {
+        text-decoration: none;
+    }
+
     i {
         display: inline;
     }
