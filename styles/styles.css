@@ -209,4 +209,32 @@ a:hover {
   color: #222;
   background-color: #05F2F2;
 }
+
+@media screen and (min-width: 640px) {
+  .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-container p {
+    margin-left: 20px;
+    width: 320px;
+  }
+  #mobile-nav-hamburger, .nav-icons {
+    display: none;
+  }
+  nav {
+    display: inline-block;
+  }
+  .hidden {
+    display: inline-block;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
