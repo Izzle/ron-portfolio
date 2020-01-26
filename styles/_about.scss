@@ -1,4 +1,6 @@
 .about-container {
+    @include flex(column, center);
+    margin: 0 auto;
     width: 320px;
     img {
         border-radius: 50%;

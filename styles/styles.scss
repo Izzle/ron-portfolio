@@ -49,6 +49,16 @@ a:hover {
     display: none;
 }
 
+.index-container {
+    @include flex(row, flex-start);
+
+    img {
+        display: none;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
 /* This holds our H1 and H2 on the main page*/
 .text-zone {
     padding-left: 4rem;
@@ -97,4 +107,23 @@ a:hover {
         }
     }
 
+
+
+    .about-container {
+
+        width: 500px;
+        img {
+            border-radius: 50%;
+            width: 66%;
+        }
+    
+    }
+
+    .index-container{
+        img{
+            display: block;
+            width: 400px;
+            height: 400px;
+        }
+    }
 }
