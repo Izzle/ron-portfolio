@@ -32,6 +32,19 @@ footer {
     @include flex(row, space-evenly);
     font-size: 2rem;
     margin-top: 5rem;
+    position: fixed;
+    bottom: 0;
+
+    /* This centers the footer elements */ 
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    
+
+    i {
+      margin-left: 35px;
+      margin-right: 35px
+    }
 }
 
 a:hover {
@@ -63,16 +76,16 @@ a:hover {
 
 @media screen and (min-width: 640px) {
 
-    #mobile-nav-hamburger {
+    #mobile-nav-hamburger::before {
         display: none;
     }
 
-    nav {
-        display: inline-block;
+    .hidden {
+        display: inline;
     }
 
-    .hidden {
-        display: inline-block;
+    .nav-bar {
+        @include flex(row, space-evenly);
     }
 }
 
