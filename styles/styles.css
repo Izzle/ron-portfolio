@@ -114,6 +114,41 @@ button:hover i {
   color: #222;
 }
 
+@media screen and (min-width: 640px) {
+  .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-container p {
+    margin-left: 20px;
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-container img {
+    width: 640px;
+  }
+  .project-container button {
+    width: 320px;
+    height: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5.5rem;
+  }
+  .project-container p {
+    font-size: 1.2rem;
+    width: 416px;
+  }
+}
+
 .contact-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,22 +273,6 @@ a:hover {
 }
 
 @media screen and (min-width: 640px) {
-  .project-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .project-container p {
-    margin-left: 20px;
-    width: 320px;
-  }
   #mobile-nav-hamburger, .nav-icons {
     display: none;
   }
@@ -262,22 +281,6 @@ a:hover {
   }
   .hidden {
     display: inline-block;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .project-container img {
-    width: 640px;
-  }
-  .project-container button {
-    width: 320px;
-    height: 3rem;
-    margin-top: 1.5rem;
-    margin-bottom: 5.5rem;
-  }
-  .project-container p {
-    font-size: 1.2rem;
-    width: 416px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
