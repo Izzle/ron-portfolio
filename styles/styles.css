@@ -96,6 +96,24 @@ img {
   line-height: 1.5;
 }
 
+/* For the buttons on the Project view */
+.project-button-container i {
+  color: #05F2F2;
+}
+
+button {
+  background-color: #222;
+  border: 2px solid #05F2F2;
+}
+
+button:hover {
+  background-color: #05F2F2;
+}
+
+button:hover i {
+  color: #222;
+}
+
 .contact-links {
   display: -webkit-box;
   display: -ms-flexbox;

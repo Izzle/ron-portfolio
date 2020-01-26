@@ -27,3 +27,22 @@ img {
         line-height: 1.5;
     }
 }
+/* For the buttons on the Project view */ 
+.project-button-container {
+    i {
+        color: $teal;
+    }
+}
+
+button {
+    background-color: $black;
+    border: 2px solid $teal;
+
+    &:hover {
+        background-color: $teal;
+
+        i {
+            color: $black;
+        }
+    }
+}
